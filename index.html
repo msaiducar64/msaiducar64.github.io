@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+
+  <title> Robo City</title>
+
+  <link rel="icon" href="image/Logo/ico.png" type="image/png" sizes="16x16">
+
+  <meta charset="utf-8">
+  <meta name ="viewport" content="width=device-width , initial-scale=1">
+  <meta name ="description" content="Kazanımlarınız ezberle değil pratikle olsun! Robo City; Fen,Teknoloji, Mühendislik ve Matematiği aktivitelerle birleştirerek yeni ufuklar açıyor.">
+  <meta name="keywords" content="Robo City,robocitylab,Uşak,Robotik,Kodlama,Web Tasarım,Lego Education,WeDo 2.0,Mindstorms EV3,Arduino,Makey Makey,Yazılım,Scratch,3D Tasarım,Tinkercad,Joomla,www.robocity.com.tr,Akıl Oyunları,Satranç">
+  <meta name="author" content="RoboCityLab">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/script.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
+
+  <div id="ustbilgipc" class="container-fluid hidden-md hidden-lg">
+      <div class="row">
+  		<div class="col-sm-12"><p><span class="glyphicon glyphicon-phone"></span><a href="tel:+905539366400" style="color:white">+90 (553) 936 64 00</a></p></div>
+      </div>
+  </div>
+
+  <div id="ustbilgipc" class="container-fluid hidden-sm hidden-xs" >
+      <div class="row">
+  		<div class="col-sm-3"><p><span class="glyphicon glyphicon-phone-alt"></span><a href="tel:+90276500992" style="color:white"> &nbsp;+90 (276) 502 09 92</a></p></div>
+  		<div class="col-sm-3"><p><span class="glyphicon glyphicon-phone"></span><a href="tel:+905539366400" style="color:white">&nbsp;+90 (553) 936 64 00</a></p></div>
+  		<div class="col-sm-3"><p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@rpbpcity.com.tr?Subject=Robo%20City" target="_top" style="color:white">&nbsp;info@robocity.com.tr</a></p></div>
+  		<div class="col-sm-3"><p><span class="glyphicon glyphicon-time"></span> <span id="saat"></span>:<span id="dakika"></span>&nbsp;(09:30 - 19:00)&nbsp; <span id="acikdurum"></span></p></div>
+  	</div>
+  </div>
+
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="50">
+  	<div  id="navbarcss" class="container-fluid">
+  		<div class="row">
+  			<div class="col-sm-3">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand hidden-xs" href="http://www.robocity.com.tr"> <img id="buyukLogo" class="img-responsive" src="image/Logo/logo.png" alt="Robo City"> </a>
+  					<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="http://www.robocity.com.tr"> <img id="kucukLogo" class="img-responsive" src="image/Logo/logo2.png" alt="Robo City"> </a>
+  				</div>
+  			</div>
+  			<div class="col-sm-9">
+  				<div class="collapse navbar-collapse" id="myNavbar">
+  					<ul class="nav nav-pills nav-justified"  id="navcss">
+  						<li><a class="hidden-xs" href="#hakkimizdapc" id="12a">Hakkımızda</a></li>
+              <li><a class="hidden-sm hidden-md hidden-lg" href="#hakkimizdamb" id="12a">Hakkımızda</a></li>
+              <li><a class="hidden-xs" href="#kazanimlarpc" id="13a">Kazanımlar</a></li>
+              <li><a class="hidden-sm hidden-md hidden-lg" href="#kazanimlarmb" id="13a">Kazanımlar</a></li>
+              <li><a href="#aktiviteler" id="13a">Aktivitelerimiz</a></li>
+  						<li><a class="hidden-xs" href="#tanitimpc" id="14a">Tanıtım Aktivitesi</a></li>
+              <li><a class="hidden-sm hidden-md hidden-lg" href="#tanitimmb" id="14a">Tanıtım Aktivitesi</a></li>
+              <li><a href="#hizmetler" id="15a">Hizmetlerimiz</a></li>
+  						<li><a href="#iletisim" id="16a">İletişim</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </nav>
+
+
+<div id="anasayfa" class="container-fluid">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src= "image/Slider/1.png" alt="Lego Education WeDo 2.0 Robotik & Kodlama Aktivitesi" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="image/Slider/2.png" alt="Lego Education Mindstorms EV3 Robotik & Kodlama Aktivitesi" style="width:100%">
+        </div>
+
+        <div class="item">
+          <img src="image/Slider/3.png" alt="Scratch Yazılım Aktivitesi" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Önceki</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Sonraki</span>
+      </a>
+    </div>
+
+</div>
+
+<div id="hakkimizdapc" class="container-fluid hidden-xs">
+  <div id="hakkimizda1pc" class="container-fluid">
+	   <div class="row" >
+		     <div id="jum1pc1"  class="col-sm-8">
+		         <div id="jum1pc1"  class="jumbotron">
+			            <h1 style="text-align:center;font-family:Kavivanar;font-weight: bold">Robo City</h1>
+                  <h2 style="text-align:center;font-family:Kavivanar;font-weight: bold"> Aktivite ve Danışmanlık</h2>
+                  <br>
+                  <br>
+			            <p style="text-indent: 1em">Aydınlık geleceğimizin mimarı olan çocuklarımıza bilimin ışığında özgüvenleri ve yaratıcılıklarıyla inşa edecekleri projelerinde fikirlerini fitilleyecek bir ateş olmak için alanında uzman bir ekip ile 2017 yılında ülkemizin güzide şehri<b> Uşak</b>'ta kurulduk.</p>
+                  <p style="text-indent: 1em">Robo City kurulurken günümüz teknoloji çağında, teknolojiyi aktivitelere entegre ederek,</p>
+                  <ul id="tickk" style="text-indent:1em; font-size:1.2em">
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Nitelikli nesiller yetiştirmek,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Çocuklara ve gençlere hayallerine ulaşma cesareti kazandırmak,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Analiz, problem çözme yeteneklerini geliştirmek,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Topluma yararlı bireyler olmaları amaçlanmıştır.</li>
+                  </ul>
+                  <p style="text-indent: 1em">Çocukların yaratıcılığı tetikleyen; onları düşünmeye, problem çözmeye, süreç odaklı çalışmaya ve merak duygusuna, öğrendiklerini proje şekline getirerek bir şeyler üretmeye teşvik eden, dünyada <b>STEM</b> olarak bilinen <b>Bilim</b> (Science), <b>Teknoloji</b> (Technology), <b>Mühendislik</b> (Engineering) ve <b>Matematik</b> (Mathematics) öğretim modelini kullanarak çocuklara yaparak yaşayarak öğrenme imkanı sunuyoruz. Aynı zamanda bu süreçte eğlenmeyi de ihmal etmiyoruz.</p>
+                  <p style="text-indent: 1em">Uşak ilimize bir ilki sunan, alanında uzman olan ekibimiz ile özel ilgi alanımız olan <b>Robotik & Kodlama</b>, <b>Yazılım</b> ve <b>3D Tasarımı</b> çocukların seviyesine inerek onlara hitap edecek şekilde hizmetler sunarken aynı zamanda şirketleriniz ya da projeleriz için ihtiyaç duyulan <b>web tasarım</b>, <b>mobil uygulama</b> ve <b>bilişim teknolojileri destek hizmetlerini</b> de sunmaktayız.</p>
+                  <p style="text-indent: 1em">Hizmetlerimiz ile hemen hemen her yaşa hitap ederken, Başarı ve sürekliliğin teminatı hizmette dürüstlük ve kalite bilinciyle hareket eden şirketimizin değişmez prensibi daima kaliteli hizmet sunmaktır.</p>
+
+			       </div>
+		      </div>
+		      <div id="welcome1" class="col-sm-4  slideanim">
+		          <img  class="img-responsive center-block" src="image/img/welcome.png" alt="Robo City">
+		      </div>
+
+	     </div>
+  </div>
+</div>
+
+<div id="hakkimizdamb" class="container-fluid hidden-sm hidden-md hidden-lg">
+  <div id="hakkimizda1mb" class="container-fluid">
+	   <div class="row" id="jum1mb1"  class="jumbotron" >
+		     <div id="jum1mb1"  class="col-sm-8">
+		         <div>
+			            <h1 style="text-align:center;font-family:Kavivanar;font-weight: bold">Robo City</h1>
+                  <h2 style="text-align:center;font-family:Kavivanar;font-weight: bold;"> Aktivite ve Danışmanlık</h2>
+                  <br>
+                  <br>
+			            <p style="text-indent: 1em">Aydınlık geleceğimizin mimarı olan çocuklarımıza bilimin ışığında özgüvenleri ve yaratıcılıklarıyla inşa edecekleri projelerinde fikirlerini fitilleyecek bir ateş olmak için alanında uzman bir ekip ile 2017 yılında ülkemizin güzide şehri<b> Uşak</b>'ta kurulduk.</p>
+                  <p style="text-indent: 1em">Robo City kurulurken günümüz teknoloji çağında, teknolojiyi aktivitelere entegre ederek,</p>
+                  <ul id="tickk">
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Nitelikli nesiller yetiştirmek,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Çocuklara ve gençlere hayallerine ulaşma cesareti kazandırmak,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Analiz, problem çözme yeteneklerini geliştirmek,</li>
+                    <li><span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp; Topluma yararlı bireyler olmaları amaçlanmıştır.</li>
+                  </ul>
+                  <p style="text-indent: 1em">Çocukların yaratıcılığı tetikleyen; onları düşünmeye, problem çözmeye, süreç odaklı çalışmaya ve merak duygusuna, öğrendiklerini proje şekline getirerek bir şeyler üretmeye teşvik eden, dünyada <b>STEM</b> olarak bilinen <b>Bilim</b> (Science), <b>Teknoloji</b> (Technology), <b>Mühendislik</b> (Engineering) ve <b>Matematik</b> (Mathematics) öğretim modelini kullanarak çocuklara yaparak yaşayarak öğrenme imkanı sunuyoruz. Aynı zamanda bu süreçte eğlenmeyi de ihmal etmiyoruz.</p>
+                  <p style="text-indent: 1em">Uşak ilimize bir ilki sunan, alanında uzman olan ekibimiz ile özel ilgi alanımız olan <b>Robotik & Kodlama</b>, <b>Yazılım</b> ve <b>3D Tasarımı</b> çocukların seviyesine inerek onlara hitap edecek şekilde hizmetler sunarken aynı zamanda şirketleriniz ya da projeleriz için ihtiyaç duyulan <b>web tasarım</b>, <b>mobil uygulama</b> ve <b>bilişim teknolojileri destek hizmetlerini</b> de sunmaktayız.</p>
+                  <p style="text-indent: 1em">Hizmetlerimiz ile hemen hemen her yaşa hitap ederken, Başarı ve sürekliliğin teminatı hizmette dürüstlük ve kalite bilinciyle hareket eden şirketimizin değişmez prensibi daima kaliteli hizmet sunmaktır.</p>
+
+			       </div>
+		      </div>
+
+		      <div  id="welcome2" class="col-sm-4 slideanim">
+		          <img  style="max-height:200px" class="img-responsive center-block" src="image/img/welcome2.png" alt="Robo City">
+		      </div>
+	     </div>
+  </div>
+</div>
+
+
+<div id="kazanimlarpc" class="container-fluid hidden-xs">
+  <div id="kazanimlar1pc" class="container-fluid">
+	   <div class="row" >
+		          <div id="kazanimimg" class="col-sm-4 slideanim">
+		          <img  class="img-responsive center-block" src="image/img/kazanimlar.png" alt="Robo City">
+		      </div>
+          <div id="jum1pc2"  class="col-sm-8">
+ 		         <div id="jum1pc2"  class="jumbotron">
+ 			            <h1 style="text-align:center;font-family:Kavivanar;font-weight: bold">KAZANIMLAR</h1>
+                   <br>
+                   <br>
+ 			            <p style="text-indent: 1em">Robotik & Kodlama,Yazılım ve 3D Tasarım aktiviteleri yapan çocuklar kendilerini bir bilim insanı, bir mühendis ya da bir tasarımcı gibi hissederler ve zamanla günlük yaşamdaki sorunları incelemek, bu sorunlara çözüm bulmak konusunda kendilerine daha fazla güven duymaya başlarlar. Aktivitelerimizin hedefi öğrencilere aşağıdaki becerileri kazandırmaktır:</p>
+                   <ul id="tickk">
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Hayatları boyunca kullanacakları bilişimsel düşünme becerileri</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Akıllı cihazları anlama, kullanabilme ve yeni akıllı cihazlar geliştirme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Mühendislik tasarım sürecini öğrenme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Kodlama, robot programlama</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Ne, nasıl çalışır konularında özgün, yaratıcı düşünebilme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Sebep ve sonuç arasında bağlantı kurma</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Oyun tasarımı ve oyun programlama</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Strateji geliştirme, risk değerlendirme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Eleştirisel düşünme, farklı fikirleri dinleme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Varsayım kurma ve yapılan ölçümlerle tahmin edilen sonuçlara ulaşmaya çalışma ve sonrasında daha ileri varsayımlar yapabilme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Hatadan ders çıkarma, zaman yönetimi</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Çalışmaktan keyif alma</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Birçok meslek dalını tanıma, deneyimleme fırsatı</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Eğlenerek, deneyerek öğrenme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Araştırma becerileri</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Takım çalışması</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Sunum becerileri, sosyalleşme</li>
+                   </ul>
+
+
+ 			       </div>
+ 		      </div>
+	     </div>
+  </div>
+</div>
+
+<div id="kazanimlarmb" class="container-fluid hidden-sm hidden-md hidden-lg">
+  <div id="kazanimlar1mb" class="container-fluid">
+	   <div class="row" class="jumbotron" id="jum1mb2">
+              <div  class="col-sm-2">
+                 <h1 style="text-align:center;font-family:Kavivanar">KAZANIMLAR</h1>
+              </div>
+		          <div id="kazanimimg" class="col-sm-4 slideanim">
+		          <img  style="max-height:200px"class="img-responsive center-block" src="image/img/kazanimlar.png" alt="Robo City">
+		      </div>
+          <div class="col-sm-6">
+
+
+                   <br>
+                   <br>
+ 			            <p style="text-indent: 1em">Robotik & Kodlama,Yazılım ve 3D Tasarım aktiviteleri yapan çocuklar kendilerini bir bilim insanı, bir mühendis ya da bir tasarımcı gibi hissederler ve zamanla günlük yaşamdaki sorunları incelemek, bu sorunlara çözüm bulmak konusunda kendilerine daha fazla güven duymaya başlarlar. Aktivitelerimizin hedefi öğrencilere aşağıdaki becerileri kazandırmaktır:</p>
+                   <ul id="tickk">
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Hayatları boyunca kullanacakları bilişimsel düşünme becerileri</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Akıllı cihazları anlama, kullanabilme ve yeni akıllı cihazlar geliştirme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Mühendislik tasarım sürecini öğrenme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Kodlama, robot programlama</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Ne, nasıl çalışır konularında özgün, yaratıcı düşünebilme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Sebep ve sonuç arasında bağlantı kurma</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Oyun tasarımı ve oyun programlama</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Strateji geliştirme, risk değerlendirme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Eleştirisel düşünme, farklı fikirleri dinleme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Varsayım kurma ve yapılan ölçümlerle tahmin edilen sonuçlara ulaşmaya çalışma ve sonrasında daha ileri varsayımlar yapabilme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Hatadan ders çıkarma, zaman yönetimi</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Çalışmaktan keyif alma</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Birçok meslek dalını tanıma, deneyimleme fırsatı</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Eğlenerek, deneyerek öğrenme</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Araştırma becerileri</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Takım çalışması</li>
+                     <li> <span class="glyphicon glyphicon-ok" style="color:white"></span>&nbsp;Sunum becerileri, sosyalleşme</li>
+                   </ul>
+
+
+
+ 		      </div>
+	     </div>
+  </div>
+</div>
+
+<div id="aktiviteler" class="container-fluid">
+  <div id="aktiviteler1" class="container-fluid">
+    <div class="container-fluid">
+      <br>
+      <br>
+    <h1 style="text-align:center;font-family:Kavivanar;font-size:2em;font-weight: bold">AKTİVİTELERİMİZ</h1><br>
+    <br>
+    <br>
+  </div>
+    <div id="robotikKodlama" class="container-fluid">
+      <h1 id="robotikKodlamaBaslık">Robotik & Kodlama</h1><br>
+
+      <div id="WeDo" class="container-fluid">
+          <h2 id="WeDoBaslık">6 - 10 yaş Robotik & Kodlama </h2>
+      <div id="WeDoRow" class="row">
+          <div id="WeDoResim"class="col-sm-4" >
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="image/img/wedo.png" alt="Lego Education WeDo 2.0 Robotik & Kodlama Aktivitesi" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <img src="image/img/wedoset.png" alt="Lego Education Mindstorms EV3 Robotik & Kodlama Aktivitesi" style="width:100%;">
+              </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+
+            </div>
+          </div>
+          <div id="WeDoMetin" class="col-sm-8">
+            <ul id="tickk">
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Küçük yaş grupları için en çok tercih edilen ve 60 ülkede kullanılan LEGO® Education WeDo 2.0 Core Set</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Maksimum <b>6</b> kişilik yaşa ve seviyeye uygun gruplar</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Çocukların kendilerini rahat ifade edebileceği ortam ve özel ilgi</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Her aktivitede STEM eğitim modeline uygun farklı proje ve robotlar</li><br>
+              <li> <span class="glyphicon glyphicon-calendar" style="color:blue; font-size:1em"></span> Haftada 2 gün &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="glyphicon glyphicon-hourglass" style="color:blue; font-size:1em"></span> Her aktivite 1,5 saat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="EV3" class="container-fluid" style="margin-bottom:30px">
+          <h2 id="EV3Baslık">10 yaş+ Robotik & Kodlama</h2>
+      <div id="EV3Row" class="row">
+          <div id="EV3Metin" class="col-sm-8">
+            <ul id="tickk">
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> LEGO MINDSTORMS Education EV3 Core Set + LEGO MINDSTORMS Education EV3 Expansion Set</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Maksimum <b>4</b> kişilik gruplar</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yoğun ve özel ilgi</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yapılan projeleri geliştirme imkanı</li><br>
+              <li> <span class="glyphicon glyphicon-calendar" style="color:blue; font-size:1em"></span> Haftada 2 gün &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="glyphicon glyphicon-hourglass" style="color:blue; font-size:1em"></span> Her aktivite 1,5 saat</li>
+            </ul>
+          </div>
+          <div id="EV3Resim"class="col-sm-4" >
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="image/img/ev3.png" alt="Lego Education WeDo 2.0 Robotik & Kodlama Aktivitesi" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <img src="image/img/ev3set.png" alt="Lego Education Mindstorms EV3 Robotik & Kodlama Aktivitesi" style="width:100%;">
+              </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="yazilim" class="container-fluid">
+      <h1 id="yazilimBaslık">Yazılım</h1><br>
+      <div id="Scratch" class="container-fluid">
+      <h2 id="ScratchBaslık">8 yaş ve üzeri Scratch Yazılım Aktivitesi</h2>
+      <div id="ScratchRow" class="row resmiOrtalasana">
+          <div id="ScratchResim"class="col-sm-4" >
+          <img id="imgScratch" class="img-responsive center-block slideanim" src="image/img/scratch.png" alt="Scratch" style="valign:center"><br>
+
+          </div>
+
+          <div id="ScratchMetin" class="col-sm-8">
+            <p style="text-indent:1em">Scratch, ABD’de bulunan MIT’nin geliştirdiği, 8-16 yaş arası çocukların kullanımına göre tasarlanmış oldukça basit bir arayüze sahip programlama ortamıdır. Geleneksel programlama dillerinin aksine kullanıcı, istediği fonksiyonları fare ile tıklayıp sürükleyerek animasyonlar, oyunlar, ve hikayeler yaratabilirsiniz.</p>
+            <ul id="tickk">
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Maksimum <b>4</b> kişilik gruplar</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yoğun ve özel ilgi</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yaşa ve seviyeye uygun aktivite programları</li><br>
+              <li> <span class="glyphicon glyphicon-calendar" style="color:blue; font-size:1em"></span> Haftada 2 gün &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="glyphicon glyphicon-hourglass" style="color:blue; font-size:1em"></span> Her aktivite 1 saat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="Kodu" class="container-fluid">
+          <h2 id="KoduBaslık">8 yaş ve üzeri KODU Yazılım Aktivitesi</h2>
+      <div id="KoduRow" class="row resmiOrtalasana">
+          <div id="KoduMetin" class="col-sm-8">
+            <p style="text-indent:1em">Kodu Game Lab Microsoft tarafından geliştirilmiş, çocukların basit görsel programlama diliyle '3 boyutlu oyun' geliştirebildikleri, oynayabildikleri ve yaptıkları oyunları arkadaşlarıyla paylaşabildikleri bir yazılımdır.</p>
+            <ul id="tickk">
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Maksimum <b>4</b> kişilik gruplar</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yoğun ve özel ilgi</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yaşa ve seviyeye uygun aktivite programları</li><br>
+              <li> <span class="glyphicon glyphicon-calendar" style="color:blue; font-size:1em"></span> Haftada 2 gün &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="glyphicon glyphicon-hourglass" style="color:blue; font-size:1em"></span> Her aktivite 1 saat</li>
+            </ul>
+          </div>
+          <div id="KoduResim"class="col-sm-4" >
+            <img id="imgKodu" class="img-responsive center-block slideanim" src="image/img/kodu.png" alt="Kodu">
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div id="Tinkercad3D" class="container-fluid">
+          <h2 id="Tinkercad3DBaslık">8 yaş ve üzeri Tinkercad 3D Tasarım Aktivitesi</h2>
+      <div id="Tinkercad3DRow" class="row resmiOrtalasana">
+          <div id="Tinkercad3DResim"class="col-sm-4" >
+          <img id="imgTinkercad3D" class="img-responsive center-block slideanim" src="image/img/tinkercad.png" alt="Tinkercad3D"><br>
+
+          </div>
+
+          <div id="Tinkercad3DMetin" class="col-sm-8">
+            <p style="text-indent:1em">Tinkercad, herkesin kolayca kullanabileceği tarayıcı tabanlı 3D tasarım ve modelleme aracıdır. </p>
+            <ul id="tickk">
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Maksimum <b>4</b> kişilik gruplar</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yoğun ve özel ilgi</li>
+              <li> <span class="glyphicon glyphicon-share-alt" style="color:blue; font-size:1em"></span> Yaşa ve seviyeye uygun aktivite programları</li><br>
+              <li> <span class="glyphicon glyphicon-calendar" style="color:blue; font-size:1em"></span> Haftada 2 gün &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="glyphicon glyphicon-hourglass" style="color:blue; font-size:1em"></span> Her aktivite 1 saat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="tanitimpc" class="container-fluid hidden-xs">
+  <div id="tanitim1pc" class="container-fluid">
+	   <div class="row" >
+       <div id="tanitimimg" class="col-sm-4 slideanim">
+		       <img  class="img-responsive center-block" src="image/img/tanitim1.png" alt="Robo City">
+		   </div>
+
+
+    <div  id="id1" class="col-sm-8">
+		 <div id="jum1pc1" class="jumbotron">
+			<h2 style="text-align:center;font-family:Kavivanar;font-weight: bold;">ÜCRETSİZ</h2>
+      <h2 style="text-align:center;font-family:Kavivanar;font-weight: bold;"> Tanıtım Aktivitesi</h2>
+      <br>
+      <br>
+			<p style="text-indent:1em">Hem çocuğumuzun aktivitelerimize olan ilgisini ölçebilmek, hemde ebebeyinlerini yaptığımızı aktivite ve kazanımları ile ilgili bilgilendirmek için ücretsiz tanıtım aktivitesine bekliyoruz. </p>
+      <p style="text-indent:1em">Tanıtım aktivitesini en verimli şekilde geçirebilmek ve özel ilgilenebilmek için sizlerin ve bizim en uygun zaman dilimide yapılmasını önemsiyoruz. Lütfen tanıtım aktivitesi için Randevu alın </p>
+        <div style= "padding-bottom:10px; float: right">
+
+        <a href="tel:+905539366400" class="btn btn-primary btn-lg" role="button">Randevu Al</a>
+        </div>
+        </div>
+
+		</div>
+
+	</div>
+  </div>
+
+</div>
+
+<div id="tanitimmb" class="container-fluid hidden-sm hidden-md hidden-lg">
+  <div id="tanitim1mb" class="container-fluid">
+	   <div class="row" id="jum1mb1" class="jumbotron" >
+       <div class="col-sm-4 slideanim">
+		       <img style="max-height:200px" id="img3" class="img-responsive center-block" src="image/img/tanitim1.png" alt="Robo City">
+		   </div>
+
+
+    <div  id="id1" class="col-sm-8">
+		 <div>
+			<h2 style="text-align:center">ÜCRETSİZ</h2>
+      <h2 style="text-align:center"> Tanıtım Aktivitesi</h2>
+      <br>
+      <br>
+			<p style="text-indent:1em">Hem cocuğumuzun aktivitelerimize olan ilgisini ölçebilmek, hem de ebebeyinleri yaptığımızı aktivite ve kazanımları ile ilgili bilgilendirmek için ücretsiz tanıtım aktivitemize bekliyoruz. </p>
+      <p style="text-indent:1em">Tanıtım aktivitesini en verimli şekilde geçirebilmek ve özel ilgilenebilmek için sizlerin ve bizim en uygun zaman dilimimde yapılmasını önemsiyoruz. Lütfen Tanıtım Aktivitesi için randevu alın </p>
+        <div style= "padding-bottom:10px; float: right">
+        <a href="tel:+905539366400" class="btn btn-primary btn-lg" role="button">Randevu Al</a>
+        </div>
+        </div>
+
+		</div>
+
+	</div>
+  </div>
+
+</div>
+
+<div id="hizmetler" class="container-fluid">
+  <div id="hizmetler1" class="container-fluid">
+    <div class="container-fluid">
+      <br>
+      <br>
+    <h1 style="text-align:center; font-family:Kavivanar;font-weight: bold">HİZMETLERİMİZ</h1><br>
+    <br>
+    <br>
+    </div>
+    <div  class="container-fluid">
+          <div class="row">
+          <div id="webrow" class="col-sm-4" >
+            <div id="web" class="container-fluid slideanim">
+
+                <img id="imgweb" class="img-responsive center-block img-rounded" src="image/img/web.png" alt="Web Tasarım">
+
+            <h2 id="webBaslık">Web Tasarımı</h2>
+            <p id="webMetin"> Eğer sadece firmanıza ve sektörünüze özel, sizi rakiplerinizin bir adım önüne geçirecek  kaliteli ve profesyonel web tasarım hizmeti almak istiyorsanız hemen bizimle iletişime geçin.
+              Şirketinize yaptıracağınız web sitesi için doğru firmayı seçerken öncelikle bunun bir ürün değil hizmet olduğunu düşünmeniz gerekmektedir. Hizmet sektöründe sabit bir fiyat olamayacağı, fiyatların teklif aldığınız şirketin çalışanlarının kalitesine, bilgisine ve işe gösterdikleri özen ve ilgi ile değiştiği unutulmamalıdır.
+Herhangi bir kurumun kurumsal kimliğinin yansıtılması ve tanıtım faaliyetlerinin gerçekleşmesi amacı ile ulusal ve uluslararası ağ ortamında yayınlanan online sistemlere web sitesi ve bu sitelerin oluşturulma sürecine web tasarımı denir.
+Metin, video, ses kaydı veya fotoğraf gibi tüm işitsel ve görsel araçları kullanarak oluşturulan parçalar web sayfalarını, aynı sistem altındaki bütün web sayfalarının bir araya gelmesi ile oluşan bütün de internet sitesini oluşturur.
+Günümüzde insanların internette azımsanmayacak kadar çok zaman geçirmeleri ve sanal dünyanın etkisini göz önüne alındığında şirketlerin ciddi bir site ihtiyacının olduğu görülmektedir. Bu ihtiyacınızı özgün web tasarımlarımızla karşılamak tam olarak bizim işimiz.
+Web Sitelerinde şirketler, ürün veya hizmetlerinin  fiyat ve özellik bilgilerini, resimlerini, videolarını yayınlayarak potansiyel müşterilerine kendilerini rahat bir şekilde tanıtarak daha hızlı,detaylı ve 7/24 ulaşabilmektedirler.
+Tanıtım aracı olarak kullanılmasının dışında web tasarımı sonucunda elde edilen web sitelerinin bir diğer önemli artısı da şirketler için internet üzerinde online mağaza gibi işlev görebilmeleridir. Dilerlerse buradan  satış işlemlerini de gerçekleştirebilmektedirler.
+</p>
+          </div>
+          </div>
+          <div id="mobilrow" class="col-sm-4" >
+            <div id="mobil" class="container-fluid slideanim">
+            <img id="imgmobil" class="img-responsive center-block img-rounded" src="image/img/mobil.png" alt="Mobil" style="">
+            <h2 id="mobilBaslık">Mobil Uygulama</h2>
+            <p id="mobilMetin"> Firmanıza Android ve iOs cihazlar için mobil uygulama yaptırmak istiyorsanız bizimle iletişime geçebilirsiniz.
+Günümüzde her geçen gün mobil cihaz kullanıcı sayısı büyük bir hızla artmaktadır. Mobil internet bağlantı hızının yerel internet hızına rakip olmaya başlaması ile şirketlerin mobil yazılım ihtiyaçları kaçınılmaz olmuştur.
+Günümüzde kurumların, ürün ve hizmetlerini müşteri kitlesine en kolay ve hızlı yoldan ulaştırabilmesi en önemli ihtiyaçlardan biridir. Bu nedenle mobil teknolojiler ve akıllı cihazlar online dünyada kolay erişimin anahtarı haline geldi. Mobil cihazların ortaya çıkışı ve hızla yaygınlaşmasıyla birlikte bulut servislerinin de hızlı gelişimi yeni bir mobilite çağının ortaya çıkmasına yol açtı.
+mobil yazılım ve tasarım ekibimiz ile kurumsal şirketlerin operasyonlarını bu yeniçağa adapte edebilmelerine olanak sağlıyoruz. Sağladığımız çözümler ile şirketlere, üretkenliklerini ve verimliliklerini arttırmalarını, maliyetlerini düşürmelerini, zaman ve mekândan bağımsız olarak bilgiye ulaşabilmeleri konusunda yardımcı oluyoruz
+</p>
+            </div>
+          </div>
+          <div id="btdhrow" class="col-sm-4" >
+            <div id="btdh" class="container-fluid slideanim">
+            <img id="imgbtdh" class="img-responsive center-block img-rounded" src="image/img/btdh.png" alt="Bilişim Teknolojileri Destek Hizmeti" style="">
+            <h2 id="btdhBaslık">Bilişim Teknolojileri Destek Hizmeti</h2>
+            <p id="btdhMetin"> </p>
+          </div>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+<div id="iletisim" class="container-fluid">
+  <div id="iletisim1" class="container-fluid">
+    <div id="iletisim2" class="row">
+    <div class="col-sm-4" >
+      <div class="slideanim" id="googleMap" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="col-sm-4"style="padding-top:70px; padding-left:50px">
+
+      <table class="slideanim" id="tablof">
+        <tr><td style="height: 50px; width: 50px"><span style="font-size:25px;color:white" class="glyphicon glyphicon-map-marker"></span></td><td style="color:white">Sarayaltı Mah. Celal Bayar Cad. No:106/H <br> (Özdilek karşısı Opet yanı TOKİ UK-13 Bloğu altı 38 Nolu işyeri) <span style="text-align:right"> Merkez/UŞAK</span></td></tr>
+        <tr><td style="height: 50px; width: 50px"><span style="font-size:25px;color:white" class="glyphicon glyphicon-phone-alt"></span></td><td><a href="tel:+90276500992" style="color:white">&nbsp;+90 (276) 502 09 92</a></td></tr>
+        <tr><td style="height: 50px; width: 50px"><span style="font-size:25px;color:white" class="glyphicon glyphicon-phone"></span></td><td><a href="tel:+905539366400" style="color:white">&nbsp;+90 (553) 936 64 00</a></td></tr>
+        <tr><td style="height: 50px; width: 50px"><span style="font-size:25px;color:white" class="glyphicon glyphicon-envelope"></span></td><td><a href="mailto:info@rpbpcity.com.tr?Subject=Robo%20City" target="_top" style="color:white">&nbsp;info@robocity.com.tr</a></td></tr>
+        <tr><td style="height: 50px; width: 50px"><span style="font-size:25px;color:white" class="glyphicon glyphicon-time"></span></td><td style="color:white"><span id="saat1"></span>:<span id="dakika1"></span>&nbsp;(09:30 - 19:00)&nbsp; <span id="acikdurum1"></span></td></tr>
+      </table>
+
+      </div>
+    <div class="col-sm-4" >
+      <p  class="slideanim" style="text-align:center;font-size:30px; color:white; padding-top:30px; font-family:Kavivanar"> Sosyal Medyada Biz</p>
+      <p  class="slideanim" style="text-align:center;padding-top:5px"><a href="https://www.facebook.com/robocitylab" target="_blank" class="btn btn-primary btn-lg" role="button"><i class="fa fa-facebook-f"></i>  facebook/robocitylab</a></p>
+      <p  class="slideanim" style="text-align:center;padding-top:5px"><a href="https://www.instagram.com/robocitylab" target="_blank" class="btn btn-warning btn-lg" role="button"><i class="fa fa-instagram"></i>   instagram/robocitylab</a></p>
+      <p  class="slideanim" style="text-align:center;padding-top:5px"><a href="https://www.twitter.com/robocitylab" target="_blank" class="btn btn-info btn-lg" role="button"><i class="fa fa-twitter"></i>   twitter/robocitylab</a></p>
+      <p  class="slideanim" style="text-align:center;padding-top:5px"><a href="https://plus.google.com/111346834642356926943" target="_blank" class="btn btn-success btn-lg" role="button"><i class="fa fa-google-plus"></i>    Google Plus</a></p>
+      <p  class="slideanim" style="text-align:center;padding-top:5px"><a href="https://www.youtube.com/channel/UCwarm1SVW1UOiJY6GLipdHg" target="_blank" class="btn btn-danger btn-lg" role="button"><i class="fa fa-youtube"></i>     YouTube</a></p>
+    </div>
+</div>
+  </div>
+</div>
+<div class="container-fluid">
+<P id=demo></p>
+<P id=demo2></p>
+</div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(38.6734961,29.4217962),
+    zoom:17,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6UQGBHX-HSOjQmhzCoGljAYJ7l5rRDg0&callback=myMap"></script>
+</body>
+</html>

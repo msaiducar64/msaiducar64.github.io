@@ -1,0 +1,431 @@
+<style>
+body {
+    position: relative;
+    font-family: Roboto;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+   position: relative;
+   top: 174px;
+}
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+
+#ustbilgipc{
+  font-family: 'Ubuntu';
+  font-size:1em;
+	text-align: center;
+  color: white;
+	background-color: #C53F37;
+	margin: auto;
+	padding: 5px;
+  }
+#ustbilgimb{
+    font-family: 'Ubuntu';
+  	text-align: center;
+    color: white;
+  	background-color: #C53F37;
+  	margin: auto;
+  	padding: 5px;
+    }
+#navbarcss{
+ border-bottom:  solid 2px green;
+
+}
+
+
+#navcss{
+  font-family:'Kavivanar';
+  font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+	padding-top: 40px;
+  padding-bottom: 40px;
+   }
+
+}
+#buyukLogo{
+  margin: 0px;
+  padding:0px;
+
+}
+#anasayfa{
+     background-color: rgba(32, 77, 138, 0.1);
+     padding:0px ;
+     margin: 0px;
+}
+
+#hakkimizdapc,#kazanimlarpc,#tanitimpc{
+  background-color: rgba(197, 63, 55, 0.1);
+  padding: 90px;
+}
+#jum1pc1{
+	font-family: 'Ubuntu';
+	font-size: 1em;
+  color: white;
+	background-color: #C53F37;
+  text-align: justify;
+  margin: 0px;
+}
+#jum1pc2{
+	font-family: 'Ubuntu';
+	font-size: 1em;
+  color: white;
+	background-color: #204D8A;
+  text-align: justify;
+  margin: 0px;
+}
+#hakkimizdamb,#kazanimlarmb,#tanitimmb{
+  background-color: rgba(197, 63, 55, 0.1);
+  padding: 10px;
+}
+#jum1mb1{
+	font-family: 'Ubuntu';
+	font-size: 1em;
+  color: white;
+	background-color: #C53F37;
+  text-align: justify;
+  margin: 0px;
+}
+#jum1mb2{
+	font-family: 'Ubuntu';
+	font-size: 1em;
+  color: white;
+	background-color: #204D8A;
+  text-align: justify;
+  margin: 0px;
+}
+#iletisim{
+  background-color: rgba(197, 63, 55, 0.1);
+  position: relative;
+  padding:   90px 0px 90px 0px;
+}
+
+#aktiviteler,#hizmetler{
+  background-color: rgba(32, 77, 138, 0.1);
+}
+
+#aktiviteler1,#hizmetler1{
+  margin:  90px 0px 90px 0px;
+  font-family: 'Ubuntu';
+  font-size: 1em;
+  color: #204d8a;
+}
+#robotikKodlama{
+  border: 5px solid #006E51 ;
+  border-radius: 20px;
+  background-color:#006E51;
+  color:white ;
+  font-family: 'Ubuntu';
+  font-size:1em;
+}
+#robotikKodlamaBaslık{
+text-align:center;
+color:white ;
+padding: 10px 0px 10px 0px;
+font-family:'Kavivanar';
+}
+#yazilim{
+  margin-top: 50px;
+  border: 5px solid #006E51 ;
+  border-radius: 20px;
+  background-color:#006E51;
+  color:white ;
+  font-family: 'Ubuntu';
+  font-size:1em;
+
+}
+#yazilimBaslık{
+  text-align:center;
+  color:white ;
+  padding: 10px 0px 10px 0px;
+  font-family:'Kavivanar';
+}
+#tickk{
+  list-style: none;
+  padding-left:0px;
+  text-align: left;
+}
+
+#WeDo{
+  border: 5px solid #DC4C46 ;
+  border-radius: 20px;
+  background-color:#DC4C46;
+}
+#WeDoBaslık{
+text-align:center;
+font-family:'Kavivanar';
+color:white ;
+padding: 10px 0px 10px 0px;
+}
+#WeDoRow{
+
+}
+#WeDoMetin{
+padding: 20px 20px 20px 20px;
+text-align: justify;
+font-family:'Ubuntu';
+color: white;
+font-size:1.5em;
+}
+#EV3{
+  margin-top: 50px;
+  border: 5px solid #92B558 ;
+  border-radius: 20px;
+  background-color:#92B558;
+}
+#EV3Baslık{
+text-align:center;
+font-family:'Kavivanar';
+color:white ;
+padding: 10px 0px 10px 0px;
+}
+#EV3Row{
+
+}
+#EV3Metin{
+
+padding: 20px 20px 20px 20px;
+text-align: justify;
+font-family:'Ubuntu';
+color: white;
+font-size:1.5em;
+
+}
+#Scratch{
+  margin-top: 0px;
+  border: 5px solid #672E3B ;
+  border-radius: 20px;
+  background-color:#672E3B;
+}
+#ScratchBaslık{
+  text-align:center;
+  font-family:'Kavivanar';
+  color:white ;
+  padding: 10px 0px 10px 0px;
+}
+#ScratchRow{
+
+}
+#ScratchMetin{
+
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+  font-family:'Ubuntu';
+  color: white;
+  font-size:1.5em;
+
+}
+#Kodu{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border: 5px solid #005960 ;
+  border-radius: 20px;
+  background-color:#005960;
+}
+#KoduBaslık{
+text-align:center;
+font-family:'Kavivanar';
+color:white ;
+padding: 10px 0px 10px 0px;
+}
+#KoduRow{
+
+}
+#KoduMetin{
+
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+  font-family:'Ubuntu';
+  color: white;
+  font-size:1.5em;
+
+}
+
+#Tinkercad3D{
+  margin-top: 50px;
+  border: 5px solid #D2691E;
+  border-radius: 20px;
+  background-color:#D2691E;
+}
+#Tinkercad3DBaslık{
+text-align:center;
+color:white ;
+padding: 10px 0px 10px 0px;
+font-family:'Kavivanar';
+}
+#Tinkercad3DRow{
+
+}
+#Tinkercad3DMetin{
+
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+  font-family:'Ubuntu';
+  color: white;
+  font-size:1.5em;
+
+}
+#webrow{
+padding: 10px;
+}
+#web{
+  background-color: #006E51;
+
+  border: 10px solid #006E51;
+  border-radius: 10px;
+}
+#webBaslık{
+  text-align:center;
+  color:white ;
+  font-family:'Kavivanar';
+}
+#webMetin{
+  text-indent: 1em;
+  text-align: justify;
+  font-family:'Ubuntu';
+  font-size: 1em;
+  color: white;
+
+}
+
+#imgweb{
+  margin-top: 10px;
+}
+#mobilrow{
+  padding: 10px;
+
+}
+#mobil{
+  background-color: #B565A7;
+
+  border: 10px solid #B565A7;
+  border-radius: 10px;
+
+}
+#mobilBaslık{
+  text-align:center;
+  color:white ;
+  font-family:'Kavivanar';
+}
+#mobilMetin{
+  text-indent: 1em;
+  text-align: justify;
+  font-family:'Ubuntu';
+  font-size: 1em;
+  color: white;
+
+}
+
+#imgmobil{
+  margin-top: 10px;
+}
+
+#btdhrow{
+padding: 10px;
+}
+
+#btdh{
+
+  background-color: #DD4124;
+
+  border: 10px solid #DD4124;
+  border-radius: 10px;
+}
+#btdhBaslık{
+  font-family:'Kavivanar';
+  text-align:center;
+  color:white ;
+}
+#btdhMetin{
+  text-indent: 1em;
+  text-align: justify;
+  font-family:'Ubuntu';
+  font-size: 1em;
+  color: white;
+
+}
+
+#imgbtdh{
+  margin-top: 10px;
+}
+
+
+  #iletisim1{
+  	font-family:'Ubuntu';
+  	font-size: 1em;
+    color: white;
+  	background-color: #C53F37;
+    margin:  90px 0px 90px 0px;
+    position: relative;
+    margin: auto;
+
+  	}
+    #iletisim2{
+    padding:   20px 0px 20px 0px;
+    }
+    #tablof{
+      font-family:'Ubuntu';
+    	font-size: 1em;
+    }
+
+#ak1,#ak2,#ak3{
+  font-family: 'Ubuntu';
+	font-size: 1em;
+  color: white;
+  text-align: center;
+
+
+
+
+
+}
+#ak11,#ak22,#ak33{
+  font-family: Oswald;
+	font-size: 10;
+  color: black;
+  text-align: left;
+
+
+
+}
+
+
+
+
+</style>
